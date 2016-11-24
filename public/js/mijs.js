@@ -40,6 +40,7 @@ $(document).ready(function(){
 			$("#p_"+i+"_kex_fecha").text(pregunta.Explicaciones[0].Fecha);
 			$("#p_"+i+"_kex_nid").text("1");
 			$("#p_"+i+"_kex_ntotal").text(pregunta.Explicaciones.length);
+			$("#p_"+i+"_kex_n").text(pregunta.Explicaciones.length);
 	});
 
 	// oculta los botones izquierdos de las explicaciones
@@ -48,7 +49,7 @@ $(document).ready(function(){
 	// al elegir una opcion el icono de "editado" se hace visible
 	$('input:radio').change(function(){
 		var cad = $(this).attr('name').replace("_radio","_iconW")
-		$('#'+cad).attr("style","color:black");
+		$('#'+cad).attr("style","color:white");
 	});
 
 	// al pinchar en el icono "editado" se elimina la eleccion y el icono desaparece
@@ -82,9 +83,12 @@ $(document).ready(function(){
 				// no hay respuesta
 				// se marca la respuesta correcta
 				var cad = '#'+Cid.replace('_value','_icono');
-				$(cad).attr("style","color:blue");
+				$(cad).removeAttr("style");	
 				$(cad).removeClass('glyphicon glyphicon-thumbs-up');
-				$(cad).addClass('glyphicon glyphicon-hand-right');
+				$(cad).addClass('glyphicon glyphicon-hand-right text-primary');
+
+				$('#p_'+i+'_panel').removeClass('panel panel-primary');
+				$('#p_'+i+'_panel').addClass('panel panel-default')
 
 
 
@@ -95,18 +99,20 @@ $(document).ready(function(){
 
 				// se marca la respuesta correcta
 				var cad = '#'+Cid.replace('_value','_icono');
-				$(cad).attr("style","color:blue");
+				$(cad).removeAttr("style");	
 				$(cad).removeClass('glyphicon glyphicon-thumbs-up');
-				$(cad).addClass('glyphicon glyphicon-hand-right');
+				$(cad).addClass('glyphicon glyphicon-hand-right text-primary');
 
-				// se marca la respuesta del sujeto con otro color
+				// se marca la respuesta del sujeto con rojo
 				var cad = '#'+Rid.replace('_value','_icono');
-				$(cad).attr("style","color:red");
-				$(cad).removeClass('glyphicon glyphicon-thumbs-up');
-				$(cad).addClass('glyphicon glyphicon-remove');
+				$(cad).removeAttr("style");	
+				$(cad).removeClass('glyphicon glyphicon-thumbs-up ');
+				$(cad).addClass('glyphicon glyphicon-remove text-danger');
 
 				// se cambia el color del panel
-				$('#p_'+i+'_head').css("background", "#9C0606");
+				$('#p_'+i+'_panel').removeClass('panel panel-primary');
+				$('#p_'+i+'_panel').addClass('panel panel-danger')
+				// $('#p_'+i+'_head').css("background", "#FF5A51");
 
 			} else {
 				// es un acierto
@@ -114,10 +120,12 @@ $(document).ready(function(){
 				console.log("es un acierto");
 				// se marca la respuesta correcta con un simbolo
 				var cad = '#'+Rid.replace('_value','_icono');
-				$(cad).attr("style","color:green");	
+				$(cad).removeAttr("style");	
 				$(cad).removeClass('glyphicon glyphicon-thumbs-up');
-				$(cad).addClass('glyphicon glyphicon-ok');
-				$('#p_'+i+'_head').css("background", "#159C06");
+				$(cad).addClass('glyphicon glyphicon-ok text-success');
+				
+				$('#p_'+i+'_panel').removeClass('panel panel-primary');
+				$('#p_'+i+'_panel').addClass('panel panel-success')
 			}
 		});
 

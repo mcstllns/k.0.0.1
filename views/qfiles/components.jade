@@ -51,7 +51,7 @@ mixin acordeonBody(object, i, parent)
 						tr
 							- var ricono = "p_"+i+"_radio_icono_"+j
 							td(style="width:5%; vertical-align: top;")
-								#[+noicon("thumbs-up",ricono)]
+								| #[+noicon("thumbs-up",ricono)]
 								input(type="radio", id="p_#{i}_radio_value_#{j}", name="p_#{i}_radio", value="")
 							td(style="width:95%") 
 								span(id="p_#{i}_radio_texto_#{j}")
@@ -59,7 +59,7 @@ mixin acordeonBody(object, i, parent)
 
 
 mixin acordeonHijo(object, i, parent)
-	.panel(class="panel-default")
+	.panel(class="panel-primary" id="p_#{i}_panel")
 		+acordeonHead(object, i, parent)
 		+acordeonBody(object, i, parent)
 			+Kexplicaciones(object.Explicaciones, i)
@@ -69,11 +69,29 @@ mixin acordeonHijo(object, i, parent)
 //- --------------------------------------------
 
 mixin Kexplicaciones(object, i)
-	br
-	button(id="p_#{i}_kex_boton", class="btn btn-info btn-xs" data-toggle="collapse" data-target="#p_#{i}_kex_cuerpo") K: explicaciones de alumnos
+	.text-right
+		button(id="p_#{i}_kex_boton", class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#p_#{i}_kex_cuerpo") 
+			strong K <span id="p_#{i}_kex_n", class="badge"> </span>
 	div(id="p_#{i}_kex_cuerpo" class="collapse")
-		<hr style="width: 80%; color: black; height: 1px; background-color:gray;"/>
-		span(id="p_#{i}_kex_texto") adios
+		//-<hr style="width: 80%; color: black; height: 1px; background-color:gray;"/>
+		br
+		table(style="width:100%")
+			tbody
+				tr
+					td(style="width:10%") 
+						.text-left
+							span(id="p_#{i}_kex_bizq",class="glyphicon glyphicon-chevron-left", style="font-size:1.2em;")
+					td(style="width:80%; border-bottom: thin solid grey;")
+						.text-center
+							span(id="p_#{i}_kex_nid")
+							span() / 
+							span(id="p_#{i}_kex_ntotal")
+					td(style="width:10%")
+						.text-right
+							span(id="p_#{i}_kex_bder",class="glyphicon glyphicon-chevron-right", style="font-size:1.2em;")
+		//-<hr style="width: 80%; color: black; height: 1px; background-color:gray;"/>
+		br
+		span(id="p_#{i}_kex_texto") Aqui va la explicacion
 		table(style="width:100%")
 			tbody
 				tr
@@ -87,23 +105,10 @@ mixin Kexplicaciones(object, i)
 						em
 							.text-right.text-muted
 								span(id="p_#{i}_kex_nombre") 
-								span(), 
+								span , 
 								span(id="p_#{i}_kex_fecha")
-		<hr style="width: 80%; color: black; height: 1px; background-color:gray;"/>
-		table(style="width:100%")
-			tbody
-				tr
-					td(style="width:10%") 
-						.text-left
-							span(id="p_#{i}_kex_bizq",class="glyphicon glyphicon-chevron-left", style="font-size:1.2em;")
-					td(style="width:80%")
-						.text-center
-							span(id="p_#{i}_kex_nid")
-							span() / 
-							span(id="p_#{i}_kex_ntotal")
-					td(style="width:10%")
-						.text-right
-							span(id="p_#{i}_kex_bder",class="glyphicon glyphicon-chevron-right", style="font-size:1.2em;")
+
+
 
 
 

@@ -4,28 +4,25 @@ extends qfiles/_bootstrap
 
 append body
 	.container
-		h1 K-cuestionario
-		.panel.panel-default(id="panelResultados")
-			.panel-heading Resultados
-			.panel-body
-				p Aciertos = 10
-				p Fallos = 2
-				p Puede ver los resultados
-		.alert.alert-info 
-			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-			p Puede ver las explicaciones de otros alumnos
+		span(style="font-size:100px;", class="text-primary") 
+			strong K
+		span(style="font-size:25px;", class="text-muted")   Cuestionarios
+		blockquote(class="blockquote-reverse") 
+			p Tema 1: Introducción
+			small 20 preguntas aleatorias
 
 		+acordeonMadre("madre")
 			each pregunta, i in pr
 				+acordeonHijo(pregunta, i, "madre")
 
-		button(id="miboton") Corregir
+		p(style="text-align: center;") 
+			button(class="btn btn-primary", id="miboton") Corregir
 
 		.modal.fade(id="mimodal", role="dialog")
 			.modal-dialog
 				.modal-content
 					.modal-header
-						button(type="button" class="close" data-dismiss="modal")&times;
+						button(type="button" class="close" data-dismiss="modal") 
 						.modal-title Mensaje
 					.modal-body 
 						span(id="textomodal")

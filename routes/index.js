@@ -93,7 +93,10 @@ router.get('/q', function(req, res, next) {
 
 router.get('/m', function(req, res, next) {
 
-  var mongoose = require('mongoose');
+
+
+// todo esto es el paquete que había antes
+/*  var mongoose = require('mongoose');
   var Schema = mongoose.Schema;
 
   var preguntaSchema = new Schema({
@@ -133,6 +136,18 @@ router.get('/m', function(req, res, next) {
       res.render('q3', {pr : pr});
     });
   });
+*/
+
+var mongoose = require('mongoose');
+var col3 = mongoose.model('col3');
+col3.find({'pId' : { $in: [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10]}}, '', function (err, person) {
+  if (err) return handleError(err);
+  console.log("consola1:", person.length);
+
+  var pr = person;
+  res.render('q3', {pr : pr});
+});
+
 
  // console.log("pruebas con mongo");
  // res.render('sacaconsola', { cadena: 'Pruebas con mongo' });
