@@ -1,0 +1,59 @@
+extends qfiles/_bootstrap
+
+append body
+	.container
+		h1= pr[0].enunciado
+		h6 #{pr[0].enunciado}
+		p #{pr[0].enunciado} #[+icon("thumbs-up")] : 10, en texto.
+		+accordion("madre")
+			+accordion-item-default('Pregunta 1',"madre","true")
+				|	This is first accordion content
+			+accordion-item-default('Pregunta 2',"madre")
+				|	This is first accordion content
+
+		.panel(class="panel-default")
+			.panel-heading(id="Hpanel")
+				.row
+					.col-xs-8 Un panel basico
+					.col-xs-4 #[.text-right #[+icon("thumbs-up","mi_icono")]]
+			.panel-body(id="mipanel") 
+				.row
+					.col-xs-1 #[+icon("thumbs-up","mi_icono1")] 
+					.col-xs-1 <input type="radio" name="optradio" value=1>
+					.col-xs-8 Esta es la alternativa 1
+				.row
+					.col-xs-1 #[+icon("thumbs-up","mi_icono2")] 
+					.col-xs-1 <input type="radio" name="optradio" value=2>
+					.col-xs-8 Esta es la alternativa 2
+				.row
+					.col-xs-1 #[+icon("thumbs-up","mi_icono3")] 
+					.col-xs-1 <input type="radio" name="optradio" value=3>
+					.col-xs-8 Esta es la alternativa 3
+
+		.panel-group(id="madre2")
+			.panel(class="panel-default")
+				.panel-heading(id="hitem1")
+					h4.panel-title
+						a(data-toggle="collapse", data-parent="#madre2", href="#title1") #{pr[0].enunciado} #[+icon("thumbs-up")] : 10, en texto.
+				.panel-collapse.collapse.in(id="title1")
+					.panel-body Esto es el cuerpo de 1
+			.panel(class="panel-default")
+				.panel-heading(id="hitem2")
+					h4.panel-title
+						a(data-toggle="collapse", data-parent="#madre2", href="#title2") P2
+				.panel-collapse.collapse(id="title2") 
+					.panel-body Esto es el cuerpo de 2
+			.panel(class="panel-default")
+				.panel-heading(id="hitem3")
+					h4.panel-title
+						a(data-toggle="collapse", data-parent="#madre2", href="#title3") P3
+				.panel-collapse.collapse(id="title3") 
+					.panel-body Esto es el cuerpo de 3
+
+		<p id="test">This is another paragraph.</p>
+		<button>Click me</button>
+
+		
+
+	
+

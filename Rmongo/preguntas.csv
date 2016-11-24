@@ -1,0 +1,229 @@
+pId;TemaId;TemaTitulo;Año;Pregunta;Correcta;Distractor1;Distractor2
+1;1;Introducción;2015;Definimos las relaciones sintácticas como;Relaciones entre constructos teóricos;Relaciones entre conductas empíricas;Relaciones entre constructos teóricos y conductas empíricas
+2;1;Introducción;2015;Si estoy interesado en tener una visión global y holística de la personalidad de un paciente debería utilizar;Un test proyectivo;Un test psicométrico;Un test de potencia
+3;1;Introducción;2015;Cuando se calculan índices de acuerdo entre observadores en los test proyectivos solemos encontrar, respecto a los test psicométricos;Valores más bajos;Valores más altos;Valores iguales
+4;1;Introducción;2015;Cuando calculo un índice de acuerdo entre observadores con un test proyectivo (pe. el test del árbol) estoy estimando;La fiabilidad de la prueba;La validez de la prueba;La relevancia de la prueba
+5;1;Introducción;2015;Los test de ejecución típica se utilizan frecuentemente para medir;Personalidad;Inteligencia;Aptitudes
+6;1;Introducción;2015;Un índice de dificultad de 0.95, en un test de ejecución típica nos indicaría;El grado de similaridad o comunalidad de esa respuesta en la muestra;El grado de dificultad del ítem para esa muestra;El grado de facilidad del ítem para esa muestra
+7;1;Introducción;2015;En cuál de los siguientes test cabría esperar un menor cansancio de los sujetos al contestarlo;Un test de ejecución típica;Un test de ejecución máxima;Un test de Aptitudes numéricas
+8;1;Introducción;2015;Utilizando un test objetivo (pe. el registro de la conductancia dérmica para medir la ansiedad) garantizamos;Una alta fiabilidad;Una alta validez;Tanto una alta fiabilidad como una alta validez
+9;1;Introducción;2015;Ante la aplicación masiva de test en un proceso de selección para un puesto de trabajo, el tipo de test más recomendado utilizar sería;Un test de lápiz y papel;Un test manipulativo;Un test oral
+10;1;Introducción;2015;La principal ventaja de un test computerizado sería;La posibilidad de que el test se adapte al sujeto;La fácil corrección del mismo;La posibilidad de omitir las instrucciones
+11;1;Introducción;2015;En un test de velocidad, una persona con mayor inteligencia;Acierta mayor cantidad de preguntas;Acierta preguntas más difíciles;Tarda más tiempo en contestar las preguntas
+12;1;Introducción;2015;En general una omisión en un test de velocidad puro indica;Que el sujeto no ha tenido tiempo de leer la pregunta;Que el sujeto no conoce la respuesta;Que el sujeto no está seguro de la respuesta correcta
+13;1;Introducción;2015;En general una omisión en un test de potencia puro indica;Que el sujeto no conoce la respuesta;Que el sujeto no ha tenido tiempo de leer la pregunta;Que el sujeto prefiere no dar su opinión al respecto
+14;1;Introducción;2015;Es posible obtener medidas libres de cultura si medimos rasgos de;No es posible medir un rasgo psicológico sin la interferencia de la cultura;Personalidad;Inteligencia
+15;1;Introducción;2015;La teoría de la generalizabilidad pretende obtener mediciones generalizables a;Otras situaciones de medida;Otros test que midan el mismo rasgo;Otros rasgos psicológicos
+16;1;Introducción;2015;La evolución temporal de la aplicación de los modelos psicométricos ha sido;TCT, TG, TRI;TRI, TCT, TG;TG, TRI, TCT
+17;1;Introducción;2015;Un cambio en el escalamiento de un test;Cambia el orden de las puntuaciones de los sujetos;Cambia la fiabilidad (consistencia temporal) del test;Cambia la validez del test
+18;1;Introducción;2015;La puntuación empírica de un sujeto en un test es el resultado de;El escalamiento;La fiabilidad;La validez
+19;1;Introducción;2015;La relación entre la puntuación empírica y la verdadera viene modulado por;El correcto muestreo dentro del universo de preguntas;La correcta elección del universo de preguntas;La validez del test
+20;1;Introducción;2015;La relación entre las puntuaciones empíricas y verdaderas viene determinada por;Las otras dos respuestas son correctas;La longitud del test;La variabilidad de la muestra
+21;1;Introducción;2015;Un test con infinitas preguntas pertenecientes a un mismo universo de preguntas será siempre;Fiable;Válido;Tanto fiable como válido
+22;1;Introducción;2015;En un test la relación entre la puntuación verdadera y el rasgo puede ser parcialmente comprobada utilizando;La técnica del análisis factorial;La correlación entre dos test paralelos;La técnica de máxima verosimilitud para la estimación de theta
+23;1;Introducción;2015;Si un test presenta una fiabilidad perfecta;La validez podrá ser perfecta;La validez será nula;La validez será perfecta
+24;1;Introducción;2015;Empíricamente, en un test con fiabilidad nula tendremos siempre;Una validez nula;Una validez perfecta;La validez podrá ser o no nula
+25;1;Introducción;2015;La propiedad de la concatenación de la que habla Hölders en su Teoría Axiomática se cumple únicamente en las escalas;De razón;Nominales;De Intervalo
+26;1;Introducción;2015;Si dos objetos físicos al unirlos, obtenemos una magnitud total diferente a la suma de las magnitudes individuales, entonces;Las otras dos respuestas son correctas;No cumplimos la propiedad de la concatenación;No estaremos en una escala de razón
+27;1;Introducción;2015;En la Teoría Representacional de Stevens y Tarski lo importante es;Las otras dos respuestas son correctas;Las relaciones entre los objetos empíricos;La existencia de una regla que asigne números a los objetos empíricos
+28;1;Introducción;2015;En una escala nominal, si medimos la altura a un grupo de personas, los valores obtenidos;Serán distintos si las alturas son distintas;Serán mayores cuanto más alta sea la persona;Serán menores cuanto más alta sea la persona
+29;1;Introducción;2015;En una escala de intervalo decimos que una trasformación es homomórfica si;Las distancias entre los números se mantienen proporcionales;Los números son siempre los mismos;Las distancias de los números respecto al cero se mantienen constantes
+30;1;Introducción;2015;Un transformación del cero nunca sería homomórfico en una escala;De razón;De Intervalo;Ordinal
+31;1;Introducción;2015;El estadístico de tendencia central más adecuado para una escala Nominal sería;La moda;La mediana;La media
+32;1;Introducción;2015;El objetivo de toda ciencia, y por tanto, también de la psicología es: describir, explicar y;Pronosticar;Interpretar;Justificar
+33;1;Introducción;2015;Indique cuál de las siguientes áreas de la Psicología no es tratada por la psicometría;El estudio del cambio en los atributos;La construcción de técnicas estadísticas;El escalamiento psicológico
+34;1;Introducción;2015;Para la psicometría la relación entre constructos teóricos y empíricos supone;Una relación semántica;Una relación sintáctica;Una relación biunívoca
+35;1;Introducción;2015;Las relaciones semánticas entre conceptos teóricos y empíricos en psicometría se producen a través de;Los test psicométricos;Los análisis de datos;Las técnicas multivariadas
+36;1;Introducción;2015;En general, cuando un instrumento de medida nos ofrece una visión global y cualitativa de la personalidad del sujeto estamos ante un test;Proyectivo;Psicométrico;De ejecución máxima
+37;1;Introducción;2015;Las características principales de los test proyectivos son;Corrección cualitativa y visión global de la personalidad;Corrección cualitativa y baja validez;Corrección cuantitativa y alta validez
+38;1;Introducción;2015;Los test proyectivos, respecto a los psicométricos;Tiene peor fiabilidad;Tienen peor fiabilidad y validez;Tienen peor validez
+39;1;Introducción;2015;Un test cuyas preguntas son situaciones cotidianas de la vida, es un test de;Ejecución típica;Ejecución máxima;Ejecución mínima
+40;1;Introducción;2015;Un test en el que el sujeto debe generar la respuesta realizando una tarea manual se dice que es un test;Manipulativo;Situacional;Oral
+41;1;Introducción;2015;Un aparato que registre la sudoración del sujeto puede ser considerado como un instrumento de medida de tipo;Objetivo;Computerizado;Oral
+42;1;Introducción;2015;La validez de un test viene determinada por la relación entre;El rasgo medido y la puntuación verdadera;La puntuación empírica y la verdadera;Las respuestas del sujeto y los errores cometidos
+43;1;Introducción;2015;La fiabilidad de un test viene determinada por la relación entre;La puntuación empírica y la verdadera;El rasgo y la apuntación verdadera;La puntuación empírica y el rasgo que se desea medir
+44;1;Introducción;2015;Si un test tiene una alta fiabilidad, entonces;Podrá tener o no una alta validez ;Tendrá una alta validez;No tendrá una alta validez
+45;1;Introducción;2015;Si un test tiene una alta validez, entonces;Tendrá una alta fiabilidad;No tendrá una alta fiabilidad;Podrá tener o no una alta fiabilidad
+46;1;Introducción;2015;Llamamos escalamiento a la relación entre;Las respuestas del sujeto y la puntuación empírica;La puntuación empírica y la verdadera;La puntuación verdadera y el rasgo
+47;1;Introducción;2015;En general, en un test psicométrico resulta más relevante tener;Una alta validez;Una alta fiabilidad;Baja cantidad de errores de medida
+48;1;Introducción;2015;La correcta relación entre el constructo teórico y las conductas observables garantiza que el test tendrá una alta;Validez;Fiabilidad;Consistencia interna
+49;1;Introducción;2015;La falta de fiabilidad en un test viene determinada por;Un insuficiente muestreo de la población de conductas observables;Una mala elección de la regla semántica;Una mala relación entre el constructo teórico y las conductas empíricas
+50;1;Introducción;2015;Si la unión de dos estímulos psicofísicos produce una sensación equivalente a la suma de las sensaciones individuales, entonces según la teoría axiomática de Hölders;La sensación es una magnitud ;La sensación no es una magnitud;La sensación no se puede medir
+51;1;Introducción;2015;Hemos construido un test para medir la inteligencia, y no hay duda de que hemos elegido correctamente el tipo conductas a medir, sin embargo mi test sólo tiene cuatro items, entonces mi test;No será ni fiable ni válido;Será fiable pero no válido;Será válido pero no fiable
+52;1;Introducción;2015;Si tenemos los números 0, 1, 2, 4. ¿Cuál de las siguientes transformaciones no sería válida en una escala de intervalo?;10, 12, 11, 14;0, 2, 4, 8;1, 3, 5, 9
+53;1;Introducción;2015;La utilización de baremos es algo común en los test;Psicométricos;Proyectivos;De potencia
+54;1;Introducción;2015;Tendremos una escala de medida cuando los números representen a los objetos empíricos de manera;Homomórfica;Homocedástica;Homogénea
+55;1;Introducción;2015;Si tenemos los números 0, 1, 2, 4. ¿Cuál de las siguientes transformaciones sería válida en una escala ordinal?;10, 120, 1111, 1112;100, 99, 101, 97;0, 0, 2, 4
+56;2;TCT;2015;En el modelo básico de la TCT (X=V+E) esos errores (E) representan;La diferencia para cada sujeto entre la puntuación obtenida y la que se debería haber obtenido ;El número de errores cometidos por el sujeto en el test;El número de errores cometidos por todos los sujetos en el test
+57;2;TCT;2015;Si la puntuación empírica de un sujeto ha sido 20, entonces;La puntuación verdadera puede ser inferior o superior a 20;La puntuación verdadera debe ser inferior a 20;La puntuación verdadera debe ser superior a 20
+58;2;TCT;2015;Si la puntuación error de un sujeto ha sido -5, entonces;La puntuación empírica debe ser inferior a la verdadera;La puntuación empírica puede ser inferior o superior a la verdadera;La puntuación empírica debe ser superior a la verdadera
+59;2;TCT;2015;Cuando la puntuación error es negativa;Sobre-estimamos la verdadera puntuación del sujeto;Infra-estimamos la verdadera puntuación del sujeto;Obtenemos la verdadera puntuación del sujeto
+60;2;TCT;2015;Según el supuesto de la TCT: E(E)=0, si le paso un test a un sujeto infinitas veces y calculo la media de las puntuaciones empíricas obtenidas;Esa media será su puntuación verdadera;Esa media estará contaminada por la media de los errores;Esa media será igual a la media empírica más una cantidad de error
+61;2;TCT;2015;Según el supuesto de la TCT: E(E)=0, si le paso un test a una población de estudiantes y calculo la media de las puntuaciones empíricas obtenidas;Esa media será la verdadera inteligencia de los estudiantes;Esa media estará contaminada por la media de los errores de los estudiantes;Esa media será igual a la media empírica de los estudiantes más una cantidad de error
+62;2;TCT;2015;Si en un test de inteligencia cometo menos error con los sujetos menos inteligentes y más error con los más inteligentes entonces;La correlación entre E y V es distinta de cero;La correlación entre E y V es igual a cero;La correlación entre E y V es 1
+63;2;TCT;2015;Si aumento la varianza verdadera (manteniendo constante la varianza empírica) entonces la correlación al cuadrado entre X y E;Disminuirá;Aumentará;No cambiará
+64;2;TCT;2015;Si tengo dos test de inteligencia X y X' y encuentro que la correlación respecto al rendimiento es mayor en el primer test que en el segundo entonces puedo concluir;X y X' no son paralelos;X y X' son paralelos;X y X' son fiables
+65;2;TCT;2015;La proporción de varianza empírica que hay en la varianza verdadera;No tiene ningún sentido;Es la fiabilidad;Es uno menos la fiabilidad
+66;2;TCT;2015;Si las desviaciones típicas de X y V son 6 y 10 respectivamente entonces la desviación típica de E es ;Según la TCT esos datos son imposibles;-8;-2
+67;2;TCT;2015;Si las desviaciones típicas de X y V son 10 y 6 respectivamente entonces la desviación típica de E es ;8;4;No se puede conocer 
+68;2;TCT;2015;La proporción de varianza verdadera que hay en la varianza empírica;Es la fiabilidad ;No tiene ningún sentido ;Es uno menos la fiabilidad 
+69;2;TCT;2015;En un test cuya fiabilidad es cero, la varianza verdadera;Es cero;Es igual a la empírica;Es igual a la varianza error 
+70;2;TCT;2015;Si la proporción de varianza error que hay en la varianza empírica es 0.4, ¿Cuánto es la fiabilidad del test?;0.6;0.4;0
+71;2;TCT;2015;Si en un test mantenemos constante la varianza de las puntuaciones verdaderas pero disminuimos la varianza de los errores;Aumenta la fiabilidad;Aumenta la varianza de las empíricas;Aumenta la covarianza de las empíricas con las verdaderas
+72;2;TCT;2015;Si paso 2 test paralelos a una misma persona entonces;En ambos test tendremos la misma puntuación verdadera ;En ambos test obtendremos la misma puntuación empírica;En ambos test cometeremos el mismo error
+73;2;TCT;2015;Si paso 2 test paralelos a la misma persona y obtengo las siguientes puntuaciones (X=V+E), ¿Cuál de las siguientes opciones cumple los supuestos de paralelismo de la TCT?;X1: 11=7+4, X2: 20=7+13;X1: 11=7+4, X2: 11=9+2;X1: 11=7+4, X2: 20=19+1
+74;2;TCT;2015;Tengo dos test paralelos, X1y X2, y hemos encontrado que la relación de X1 con la edad es de 0.9 ¿Cómo será la relación de X2 con la edad?;0.9;0.1;No se puede conocer
+75;2;TCT;2015;Según los supuestos de la TCT, los errores que cometo en un test y los que cometo en un segundo test;No están relacionados;Están relacionados por la fiabilidad;Están relacionados por uno menos la fiabilidad
+76;2;TCT;2015;Según los supuestos de la TCT los errores de medida cometidos en un test;Son siempre aleatorios;Son siempre sistemáticos;Pueden ser tanto aleatorios como sistemáticos
+77;2;TCT;2015;Según la TCT al pasar un test a una muestra numerosa;La media empírica obtenida es la media verdadera;La puntuación empírica es la puntuación verdadera;La varianza empírica es la varianza verdadera
+78;2;TCT;2015;Según los supuestos de la TCT , al pasar un test muchas veces a un sujeto;La media de los errores cometidos es cero;La varianza de los errores debe ser cero;La correlación entre las empíricas y las verdaderas debe ser cero
+79;2;TCT;2015;Al pasar un test a un grupo numeroso de personas;Los errores de medida se anulan;Las puntuaciones empíricas se anulan;Las puntuaciones verdaderas se anulan
+80;2;TCT;2015;Al aumentar la varianza verdadera, manteniendo constante la varianza empírica, necesariamente;Las otras dos respuestas son correctas;Disminuirá la varianza error;Aumentará la fiabilidad
+81;2;TCT;2015;Si aumento la fiabilidad de un test, entonces la correlación entre los errores y las empíricas;Disminuirá;Aumentará;Permanecerá constante
+82;2;TCT;2015;En dos test paralelos;Las otras dos respuestas son ciertas;Las medias de los errores deben ser iguales;Las varianzas de los errores deben ser iguales
+83;2;TCT;2015;En dos test paralelos aplicados a un mismo sujeto;Las puntuaciones verdaderas deben ser iguales;Las puntuaciones error deben ser iguales;Las puntuaciones empíricas deben ser iguales
+84;2;TCT;2015;Si la correlación entre las puntuaciones empíricas de dos test paralelos aumenta;La fiabilidad aumenta;La fiabilidad disminuye;La correlación entre los errores y las verdaderas será distinta de cero
+85;2;TCT;2015;Llamamos índice de fiabilidad a;La raíz cuadrada del coeficiente de fiabilidad;El cuadrado del coeficiente de fiabilidad;La raíz cuadrada de la varianza error
+86;2;TCT;2015;Llamamos coeficiente de fiabilidad a;Las otras dos respuestas son correctas;La correlación al cuadrado entre las empíricas y las verdaderas;El coeficiente de determinación entre las empíricas y las verdaderas
+87;2;TCT;2015;Entre varios test paralelos las correlaciones serían;Iguales;Diferentes;Iguales a uno
+88;2;TCT;2015;Si calculo la validez de criterio utilizando dos test paralelos encontraré;La misma validez de criterio;Diferente validez de criterio;Una alta validez de criterio al ser paralelos
+89;2;TCT;2015;En dos test tau-equivalente;Las medias de los errores deben ser iguales e iguales a cero;Las otras dos respuestas son ciertas;Las varianzas de los errores deben ser iguales e iguales a cero
+90;2;TCT;2015;En dos test tau-equivalentes;Las otras dos respuestas son correctas;Las varianzas verdaderas son iguales;Las medias empíricas son iguales
+91;2;TCT;2015;En dos test tau-equivalentes aplicados a un mismo sujeto;Las puntuaciones verdaderas deben ser iguales;Las puntuaciones error deben ser iguales;Las puntuaciones empíricas deben ser iguales
+92;2;TCT;2015;Entre varios test tau-equivalentes las correlaciones serían;Diferentes;Iguales;Iguales a uno
+93;2;TCT;2015;Si calculo la validez de criterio utilizando dos test tau-equivalentes encontraré;Diferente validez de criterio;La misma validez de criterio;Una alta validez de criterio
+94;3;Fiabilidad;2015;La inconsistencia temporal en las puntuaciones de los sujetos ante repetidas aplicaciones de un instrumento de medida puede venir dada por;La falta de fiabilidad del test;Cambios reales en los atributos de los sujetos;Errores sistemáticos
+95;3;Fiabilidad;2015;La fiabilidad como consistencia interna puede ser estimada usando las técnicas;Alfa y dos mitades;KR-20 y test paralelos;Test-retest y KR-21
+96;3;Fiabilidad;2015;La fiabilidad como consistencia temporal puede ser estimada usando las técnicas;Test paralelos y test-retest;Alfa y KR-20;Dos mitades y Alfa
+97;3;Fiabilidad;2015;Si en un proceso de admisión fuese inadmisible aceptar a alguien que tuviese una puntuación inferior a un punto crítico determinado, deberíamos aceptar sujetos en cuyo Intervalo de Confianza para la puntuación verdadera;El límite inferior del IC fuese superior al punto crítico;El límite superior del IC fuese inferior al punto crítico;El límite inferior del IC fuese inferior al punto crítico
+98;3;Fiabilidad;2015;El índice de fiabilidad representa;La relación lineal entre las empíricas y las verdaderas;La cantidad de varianza común entre las empíricas y verdaderas;La proporción de varianza verdadera explicada por la empírica
+99;3;Fiabilidad;2015;El coeficiente de fiabilidad de un test representa;La cantidad de varianza común entre las empíricas y verdaderas;La relación lineal entre las empíricas y las verdaderas;La proporción de varianza verdadera no explicada por la empírica
+100;3;Fiabilidad;2015;Si en test la proporción de varianza verdadera que hay en la empírica es 0.7, entonces el índice de fiabilidad es;0.83;0.7;0.3
+101;3;Fiabilidad;2015;En un test, la proporción de varianza empírica que hay en la verdadera representa;Nada;La fiabilidad;Uno menos la fiabilidad
+102;3;Fiabilidad;2015;Un coeficiente de fiabilidad de 1 indica que;Las otras dos respuestas son correctas;La varianza verdadera es igual a la empírica;La varianza error es cero
+103;3;Fiabilidad;2015;En un test calculo la fiabilidad por el método de formas paralelas. Al calcularlo por el método de alfa y encontrar exactamente el mismo valor concluyo;Los ítems del test son paralelos;La fiabilidad es alta;Los ítems del test no son paralelos
+104;3;Fiabilidad;2015;Si calculase KR-20 en un test de ítems dicotómicos encontraría;El mismo valor que con alfa;Un valor inferior a alfa;Un valor superior a alfa
+105;3;Fiabilidad;2015;Si calculase KR-20 en un test de ítems continuos (no dicotómicos) el valor encontrado sería;Nada;La fiabilidad;El límite inferior de la fiabilidad
+106;3;Fiabilidad;2015;Si el valor de la fiabilidad de un test calculada por alfa es 0.9, entonces la fiabilidad real de este test;Será igual o superior a 0.9;Será superior a 0.9;Será inferior a 0.9
+107;3;Fiabilidad;2015;Con un test de velocidad pura, en el índice de Gulliksen la varianza de los fallos (o errores) será;Cero;Igual a la varianza de las incorrectas;Igual a la varianza de las omisiones
+108;3;Fiabilidad;2015;Con un test de potencia pura, en el índice de Gulliksen la varianza de los fallos (o errores) será;Igual a la varianza de las incorrectas;Cero;Igual a la varianza de las omisiones
+109;3;Fiabilidad;2015;Para aplicar con cierta confianza las fórmulas que relacionan la variabilidad y la fiabilidad necesito suponer que;Las otras dos alternativas son ciertas;La varianza error es la misma en los dos grupos;La media empírica es la misma en los dos grupos
+110;3;Fiabilidad;2015;Un test aplicado a un grupo de niños de 8 años, respecto a un aplicado a un grupo con edades comprendidas entre los 6 y 10 años, presentará;Menor fiabilidad;Mayor fiabilidad;La misma fiabilidad
+111;3;Fiabilidad;2015;Duplicar el número de ítems de un test tiene como consecuencia;Duplicar la media empírica;Duplicar la fiabilidad;Duplicar la varianza verdadera
+112;3;Fiabilidad;2015;Si disminuyo la longitud de un test, entonces la constante K estará;Entre 0 y 1;Entre -infinito y 0;Entre 0 y +infinito
+113;3;Fiabilidad;2015;La correlación de Pearson entre las puntuaciones empíricas dos mitades supuestamente paralelas de un test es siempre;Menor que la fiabilidad;Igual a la fiabilidad ;Mayor que la fiabilidad
+114;3;Fiabilidad;2015;La amplitud del Intervalo de Confianza para la puntuación Verdadera es menor;Cuando la fiabilidad es mayor;Cuando la fiabilidad es menor;Cuando el nivel de seguridad es mayor
+115;3;Fiabilidad;2015;Al aumentar el nivel de seguridad deseado en un Intervalo de Confianza para la Puntuación Verdadera;El IC se vuelve menos preciso;El IC se vuelve menos seguro;La amplitud del IC disminuye
+116;3;Fiabilidad;2015;Para que un test obtenga un 0 en el índice de Stafford:;No pueden existir No Intentados;No pueden existir errores;Las otras dos opciones son ciertas
+117;3;Fiabilidad;2015;La fiabilidad de un test para la población general suele ser, respecto a un test de aplicación a una población específica;Mayor;Menor ;Igual
+118;3;Fiabilidad;2015;Tenemos un test de 60 elementos y una fiabilidad de 0.8. ¿Cuántos elementos tendrá que tener ese test para que tenga una fiabilidad de 0.7?;35;95;47
+119;3;Fiabilidad;2015;Hemos encontrado que la correlación entre las dos mitades (supuestamente paralelas) de un test es 0.7. ¿Cuál es la fiabilidad de dicho test?;0.8;0.7;0.6
+120;3;Fiabilidad;2015;Hemos pasado un test de inteligencia infinitas veces a un sujeto (suponiendo que fuese posible). Sabiendo que como resultado hemos obtenido una distribución N(100, 4). ¿Cuál es la verdadera inteligencia de ese individuo?;100;2;4
+121;3;Fiabilidad;2015;Hemos pasado un test de 3 ítems a 10 sujetos y hemos encontrado que la varianza de la puntuación final es 1  y las varianzas de cada uno de los ítems son 0.2, 0.1 y 0.25. Sabiendo que los ítems son dicotómicos ¿cuánto será la fiabilidad?;0.67;0.75;0.45
+122;3;Fiabilidad;2015;Hemos encontrado que la fiabilidad de un test calculada con una muestra es 0.87. ¿Cuál será la fiabilidad de ese test si hubiese sido calculada con una muestra cuya varianza empírica sea el doble?;0.93;1;0.74
+123;3;Fiabilidad;2015;Si sospecho que en un test se puede producir aprendizaje o cansancio, ¿cuál de los siguientes métodos sería el menos indicado para calcular la fiabilidad?;Test-restest;Dos mitades;Alfa
+124;3;Fiabilidad;2015;Hemos pasado un test de 3 ítems a 10 sujetos y hemos encontrado que la varianza de la puntuación final es 15 y las varianzas de cada uno de los ítems son 2, 2 y 5. ¿Sabiendo que los ítems no son dicotómicos cuánto será la fiabilidad del test?;0.6;0.4;0.8 
+125;3;Fiabilidad;2015;Para que un test obtenga un 100 en el índice de Stafford:;No pueden existir errores ni omisiones;No pueden existir No Intentados;Las otras dos opciones son ciertas
+126;3;Fiabilidad;2015;Si un test obtiene un 0 en el índice de Gulliksen entonces es un test de:;Velocidad;Potencia;Personalidad
+127;3;Fiabilidad;2015;Sabiendo que de las 18 personas que han contestado un ítem dicotómico lo han acertado solamente 8. ¿Cuál es la varianza de dicho ítem?;0.2;0.8;0.5
+128;3;Fiabilidad;2015;La fiabilidad de un test para una población específica suele ser, respecto a un test de aplicación a una población general;Menor ;Mayor;Igual
+129;4;Validez;2015;Si un test tiene una baja fiabilidad, entonces su validez:;Tenderá a ser baja ;Tenderá a ser alta;Las otras dos opciones son correctas
+130;4;Validez;2015;En una prueba de selección siempre tendemos a infraestimar la validez si la calculamos con:;El grupo de admitidos;El grupo de aspirantes;El grupo con peor puntuación en el test
+131;4;Validez;2015;En principio, según la definición del concepto de validez e independientemente de los datos empíricos, si nuestro test es válido deberíamos encontrarnos con:;Alta Validez de constructo, contenido y criterio;Alta Validez de constructo, pero baja validez contenido y criterio;Alta o baja Validez de constructo, contenido y criterio de forma independiente entre ellas
+132;4;Validez;2015;Si el coeficiente de fiabilidad de un test es de 0.95, ¿cuánto será su coeficiente de validez?  ;Menor o igual a 0,97 ;Igual a 0,95;Menor que 0,95  
+133;4;Validez;2015;Hemos obtenido que la fiabilidad de un test es 0.8 y la validez es 0.6. Sabiendo que la fiabilidad del criterio ha sido 0.8 ¿Cuánto sería la validez de ese test si no hubiésemos cometido errores de medida ni en el test ni en el criterio?;0.75;0.80;0.60
+134;4;Validez;2015;Si un test que pretende medir introversión e inteligencia, tras un analisis factorial encontramos claramente tres factores podremos concluir que el test:;Carece de validez de constructo;Posee validez convergente-discriminante;Carece de validez de contenido
+135;4;Validez;2015;Si al medir dos rasgos distintos con la misma técnica encontramos correlaciones bajas podremos concluir que tenemos:;Alta validez discriminante;Baja validez convergente;Baja validez factorial
+136;4;Validez;2015;Si un test que pretende medir introversión e inteligencia, tras un analisis factorial encontramos claramente dos factores podremos concluir que el test:;Posee validez de constructo;Posee validez convergente-discriminante;Posee validez de contenido
+137;4;Validez;2015;Si al medir un mismo rasgo, pero utilizando dos tecnicas distintas (por ejemplo el test A y el B) encontramos correlaciones bajas podremos concluir que tenemos:;Baja validez convergente;Alta validez discriminante;Baja validez factorial
+138;4;Validez;2015;Hemos obtenido que el coeficiente de fiabilidad es 0.81. ¿Cuánto será como máximo la validez de este test?;0.90;0.81;0.10
+139;4;Validez;2015;Hemos obtenido un test con una validez de 0.6. ¿Cuánto será la validez si la fiabilidad del criterio fuese de 0.4 y pasase a carecer de errores de medida (manteniendo constante la validez del criterio)?;0.95;0.60;0.83
+140;4;Validez;2015;Si un test tiene una alta fiabilidad, entonces su validez:;Será alta o baja dependiendo de la correcta elección de las conductas medidas;Tiene que ser baja ;Tiene que ser alta
+141;4;Validez;2015;Lo más sencillo de estimar en un test es siempre;La fiabilidad;La validez;Tanto la fiabilidad como la validez
+142;4;Validez;2015;Un test que no aparenta medir el rasgo deseado, se dice que no posee;Validez de contenido;Validez de criterio;Validez de constructo
+143;4;Validez;2015;Si una vez determinado el universo de preguntas realizamos un correcto muestreo de las mismas tendremos;Alta fiabilidad;Alta validez de contenido;Alta validez discriminante
+144;4;Validez;2015;Si nuestro test cubre adecuadamente todo tipo de conductas que están relacionadas con el rasgo, decimos que poseemos;Alta validez de contenido;Alta validez de constructo;Alta validez de criterio
+145;4;Validez;2015;La relación de un test con una variable externa nos informa de;La capacidad de pronosticar un criterio;La validez de contenido;La validez de constructo
+146;4;Validez;2015;La proporción del criterio que puede ser pronosticado por el test viene determinado por;La validez al cuadrado;La validez;La fiabilidad al cuadrado
+147;4;Validez;2015;En la validez concurrente;Test y criterio son simultáneos en el tiempo;El test es anterior al criterio;El criterio es anterior al test
+148;4;Validez;2015;La coherencia factorial se pone a prueba con la técnica;Análisis factorial;Matrices multimétodo-multirasgo;Análisis discriminante
+149;4;Validez;2015;En un análisis factorial el número de factores a retener viene determinado por;La cantidad de varianza explicada por ellos;El número de variables iniciales;El número de sujetos en la muestra
+150;4;Validez;2015;La reducción de variables en un análisis factorial es posible si estas;Están fuertemente relacionadas;Están muy poco relacionadas;Poseen medias similares
+151;4;Validez;2015;Para determinar si existe coherencia factorial debo analizar;La tabla de saturaciones;El gráfico de varianza explicada;Las medias de los factores
+152;4;Validez;2015;Si dos test de inteligencia presentan bajas correlaciones entre sus puntuaciones decimos que hay;Baja validez convergente;Alta validez discriminante;Baja validez discriminante
+153;4;Validez;2015;Si un test de personalidad presenta bajas correlaciones midiendo el control y el paranoidismo decimos que hay;Alta validez discriminante;Alta validez convergente;Baja validez discriminante
+154;4;Validez;2015;Si aumento la fiabilidad del test entonces;Mejoro la validez y la fiabilidad del test;Mejoro la validez pero no la fiabilidad del test;Mejoro la fiabilidad del criterio pero no la validez
+155;4;Validez;2015;El valor máximo del coeficiente de validez viene determinado por;La correlación entre las empíricas y verdaderas;La fiabilidad al cuadrado;La validez al cuadrado
+156;4;Validez;2015;La capacidad de pronosticar la puntuación de un sujeto en un criterio conociendo su puntación en el test aumentará si;Aumento la longitud del test;Disminuyo la varianza del test;Aumento la media del test
+157;4;Validez;2015;La capacidad de pronosticar la puntuación de un sujeto en un criterio conociendo su puntación en el test viene determinado por;La validez al cuadrado;La fiabilidad al cuadrado;La validez
+158;4;Validez;2015;La amplitud del intervalo de confianza para el pronóstico de la puntuación de un sujeto en un criterio conociendo su puntuación en el test, disminuirá si;Las otras dos respuestas son correctas;Aumento la validez;Aumento la fiabilidad del test
+159;5;Items;2015;Un ítem que muchos sujetos aciertan frente a uno en el que muchos sujetos fallan tendrá un índice de dificultad;Mayor;Menor;Igual
+160;5;Items;2015;Un índice de dificultad negativo para un ítem indica;No es posible un índice de dificultad negativo;Un ítem extremadamente fácil;Un ítem extremadamente difícil
+161;5;Items;2015;El índice de dificultad no debe interpretarse como dificultad en los test de;Personalidad;Inteligencia;Potencia
+162;5;Items;2015;El índice de dificultad con corrección del azar suele ser, respecto al índice de dificultad normal;Menor;Mayor;Igual
+163;5;Items;2015;En general el índice de dificultad con corrección de azar da valores más bajos que el índice de dificultad normal, excepto:;En los test de velocidad;En los test de potencia;En los test sesgados
+164;5;Items;2015;Al calcular el índice de dificultad corregido con un test de 2 alternativas debemos penalizar cada fallo con;Un punto;Medio punto;0.33 de punto
+165;5;Items;2015;Es habitual, al calcular el índice de dificultad con corrección del azar, si el ítem tiene muchas alternativas (por ejemplo más de 5 alternativas);No realizar penalización alguna a los fallos;Penalizar con un punto cada fallo;Penalizar con 2 puntos cada fallo
+166;5;Items;2015;Cuando el índice de discriminación es alto y negativo entonces un sujeto que falle el ítem;Obtendrá una alta puntuación empírica;Obtendrá una baja puntuación empírica;El índice de discriminación no guarda relación con la puntuación empírica
+167;5;Items;2015;Si un ítem tiene un índice de discriminación alto y positivo en un test que mide inteligencia pero con baja validez, podré concluir que los sujetos que aciertan el ítem;Tienen una alta puntuación empírica;Tienen una alta inteligencia;Tienen un baja inteligencia
+168;5;Items;2015;Si un ítem tiene un índice de discriminación alto y positivo en un test que mide inteligencia, para poder concluir que los sujetos que aciertan el ítem luego tienen una alta inteligencia debería cumplir;Que el test fuese altamente valido;Que el test fuese altamente fiable;Que el test fuese altamente insesgado
+169;5;Items;2015;Al escoger los mejores items de mi test en función del índice de discriminación, eliminaré primero aquellos que;Tengan un valor alto y negativo;Tengan un valor bajo y negativo;Tengan un valor alto y positivo
+170;5;Items;2015;Si quiero calcular la relación que existe entre el trastorno de anorexia (con dos niveles: si y no) y la inteligencia (medida en una escala de 0 a 100) como índice de correlación deberé utilizar;La correlación biserial-puntual;La correlación tetracórica;La correlación de pearson
+171;5;Items;2015;Si quiero calcular la relación que existe entre el hábito de fumar (con dos niveles: si y no) y el desarrollo de cáncer (también con dos niveles: si y no) como índice de correlación deberé utilizar;La correlación phi;La correlación biserial-puntual;La correlación tetracórica
+172;5;Items;2015;Cuál de las siguientes transformaciones sí tiene en cuenta la forma de la distribución de las puntuaciones;Los eneatipos;Las puntuaciones típicas derivadas;Las puntuaciones T
+173;5;Items;2015;Un sujeto que ha obtenido una T de McCall= 50. ¿Qué puntuación típica ha tenido en el test?;0;-5;10
+174;5;Items;2015;Suponiendo que la distribución de un test es absolutamente simétrica y ajustada a la normal. ¿Quién ha acertado más preguntas, un sujeto con una puntuación típica de 1 o un sujeto con una puntuación típica normalizada de 1?;Los dos han acertado las mismas preguntas;El primero;El segundo
+175;5;Items;2015;Un sujeto con una puntuación típica normalizada de +3 tendrá un eneatipo de:;9;11;21
+176;5;Items;2015;En un test de inteligencia, un sujeto que esté en el percentil 80, respecto a un sujeto que esté en el percentil 40;El primero ha acertado más preguntas que el segundo;El primero ha acertado el doble de preguntas que el segundo;El primero es el doble de inteligente que el segundo
+177;5;Items;2015;Si la probabilidad de acertar un ítem de inteligencia es mayor para las mujeres que para los hombres, entonces:;Las otras dos respuestas son correctas;El ítem puede estar sesgado contra los hombres;Las mujeres pueden ser más inteligentes que los hombres
+178;5;Items;2015;Si al estudiar el sesgo entre hombres y mujeres de un ítem de inteligencia, utilizando la técnica de Chi-squared de los aciertos encuentro que la p=0.002 puedo concluir (suponiendo el comportamiento insesgado del resto del test);Existirá sesgo hacia alguna de las poblaciones;No existirá sesgo en el ítem;El ítem estará sesgado contra las mujeres
+179;5;Items;2015;El índice de dificultad de un ítem (TCT) es menor cuanto;Más fácil es el ítem;Más difícil es el ítem;Más difícil es el test
+180;5;Items;2015;El índice de dificultad con corrección del azar de un ítem (TCT) es menor cuanto;Menos alternativas tiene un ítem;Más alternativas tiene un ítem;Más difícil es el test
+181;5;Items;2015;El castigo que imponemos para corregir el azar en un ítem con cinco alternativas es restar;0.25;0.50;0.20
+182;5;Items;2015;Un índice de discriminación (TCT) negativo para un ítem nos indica que;Las otras dos respuestas son correctas;Están acertándolo los menos competentes;Están fallándolo los más competentes
+183;5;Items;2015;En principio, el índice de discriminación de un ítem (TCT) será mayor si;Su dificultad es media;Su dificultad es alta;Su dificultad es baja
+184;5;Items;2015;La correlación más adecuada para calcular el índice de discriminación de un ítem (TCT) cuando este está dicotomizado y la puntuación empírica también ha sido dicotomizado es;La tetracórica;Pearson;La biserial
+185;5;Items;2015;Usando el método delta podemos determinar que un ítem está sesgado si;Se sitúa cerca del eje de coordenadas;Se sitúa en valores bajos de delta;Se sitúa sobre la bisectriz del cuadrante
+186;5;Items;2015;Estudiando el sesgo de dos poblaciones (A y B) con el método delta, ¿Cuál de estos ítems está sesgado?;Delta.A=8, Delta.B=13;Delta.A=8, Delta.B=8;Delta.A=13, Delta.B=13
+187;5;Items;2015;Estudiando el sesgo de dos poblaciones (A y B) con el método delta hemos encontrado que los valores para un ítem han sido Delta.A=8, Delta.B=13, podemos concluir;El ítem está sesgado a favor de la población B;El ítem está sesgado a favor de la población A;El ítem no está sesgado
+188;5;Items;2015;Los percentiles son un tipo de transformación;No lineal;Lineal;Insesgada
+189;5;Items;2015;Dos sujetos con percentiles 80 y 90 en un test respectivamente, podemos concluir que;El segundo es más inteligente;El segundo ha acertado 10 preguntas más que el primero;EL segundo es un 10% más inteligente que el primero
+190;5;Items;2015;Una escala típica derivada es una trasformación;Lineal;No lineal;Logarítmica
+191;5;Items;2015;Un valor de 120 en una escala típica derivada supondrá más inteligencia en un test;90, 10;100, 10 ;100, 15
+192;5;Items;2015;Un sujeto ha sacado 120 en una escala típica derivada en dos test distintos, el primero usando la trasformación 80, 20 y el segundo usando 100, 10. Podemos concluir que;Ha obtenido la misma inteligencia en los dos test;Ha obtenido más inteligencia en el primero;Ha obtenido más inteligencia en el segundo
+193;5;Items;2015;Un sujeto con un eneatipo de 1 ha obtenido una típica normalizada de ;-2.5;1;-1
+194;6;TRI;2015;En la TRI, al menos teóricamente, los descriptores de los ítems;No cambian al cambiar de muestra;Cambian si cambian de muestra;Varían si usamos otros sujetos
+195;6;TRI;2015;En la TRI, la función que establece la relación entre el rasgo medido y la probabilidad de superar el item se llama;CCI;CCT;Varianza error
+196;6;TRI;2015;EL modelo que más se ajusta a la realidad empírica de los datos encontrados en una muestra suele ser;El de 3 parámetros;El de Rasch;El de Birnbaum
+197;6;TRI;2015;El modelo de la TRI que más tiempo de computación y sujetos necesita es el modelo;3P;Rasch;Birnbaum
+198;6;TRI;2015;En la TRI el parámetro d viene definido por;La probabilidad máxima que se puede alcanzar en un ítem;La probabilidad mínima que se puede tener en un ítem;La probabilidad media que tiene ese ítem
+199;6;TRI;2015;En la TRI los valores del parámetro c indican;Probabilidades;Valores theta del rasgo;Valores tipificados
+200;6;TRI;2015;En la TRI los valores del parámetro b indican;Valores theta del rasgo;Probabilidades;Valores tipificados
+201;6;TRI;2015;En la TRI, si el punto medio de una CCI coincide con un valor theta =0, entonces;b=0;a=0;c=0
+202;6;TRI;2015;Dos ítems construidos con la TRI, el más difícil tendrá mayor valor en el parámetro;b;a;c
+203;6;TRI;2015;Dos ítems construidos con la TRI, el más discriminante tendrá mayor valor en el parámetro;a;b;c
+204;6;TRI;2015;En la TRI, a mayor índice de dificultad, el ítem será;Más difícil;Más fácil;Más homogéneo
+205;6;TRI;2015;La forma de comprobar la unidimensionalidad en los modelos de la TRI es;Someter los ítems a un Análisis factorial;Calcular la fiabilidad del test;Calcular la varianza del test
+206;6;TRI;2015;Tras un análisis factorial realizado con un test construido con la TRI encontramos un único factor, podemos establecer que ;Cumplimos el supuesto de unidimensionalidad;Cumplimos el supuesto de independencia;Cumplimos el supuesto de homocedasticidad
+207;6;TRI;2015;Los modelos más sencillos de calcular en la TRI son los modelos;Logísticos;Ojivales;Normales acumulados
+208;6;TRI;2015;Los modelos ojivales son derivados de;La distribución normal acumulada;La distribución F de Fisher;La distribución normal
+209;6;TRI;2015;En el modelo de Rasch todos los ítems son exactamente iguales excepto;En su posición respecto a theta;En su pendiente;En el máximo de la función
+210;6;TRI;2015;En la TRI el valor estimado del rasgo;Puede ser positivo o negativo;Es siempre positivo;Es siempre negativo
+211;6;TRI;2015;Para estimar los valores que describen las características del test y los ítems siempre necesitamos más sujetos si hemos usado;La TRI;La TCT;La TG
+212;6;TRI;2015;Los limites reales de la CCT están entre;Sumatorio de c y el número de ítems;0 y 1;Menos infinito y más infinito
+213;6;TRI;2015;En la TRI tenemos invarianza al medir un rasgo si;Comparamos las puntuaciones theta;Comparamos las puntuaciones verdaderas;Comparamos los errores de medida
+214;6;TRI;2015;En la TRI la estimación de la precisión de un test se considera que es;Una función;Una constante;Un parámetro
+215;6;TRI;2015;La precisión de un test en la TRI viene determinada por;Las otras dos respuestas son correctas;La varianza de los ítems;Los valores de theta
+216;6;TRI;2015;Consideramos que un test construido con la TRI es más preciso cuando;Su varianza error es más pequeña;Su varianza error es más grande;Su varianza error es constante
+217;6;TRI;2015;Si tenemos un test construido con la TRI, de 50 ítems y es pasado a 100 sujetos, usando el modelo de dos parámetros, en la estimación conjunta deberé estimar;200 parámetros;50 parámetros;250 parámetros
+218;6;TRI;2015;El método más utilizado para encontrar el valor theta de un sujeto en la estimación condicionada es;Máxima verosimilitud;Bayes;MCMC
+219;6;TRI;2015;En la TRI si dos ítems tienen los mismos parámetros a y c. Un sujeto con una <U+03B8>=1 ¿Cuál es más probable que acierte?: ;El que tenga menor b ;El que tenga mayor b;Los dos tienen la misma probabilidad.
+220;6;TRI;2015;Si aplicásemos 2 test (con diferentes ítems) que miden el mismo rasgo, construidos según la TRI a una misma persona deberíamos obtener;Los mismos valores theta en ambos test;Las mismas puntuaciones verdaderas;Las otras dos respuestas son correctas.
+221;6;TRI;2015;Sabiendo que un ítem construido según la TRI tiene 1 de dificultad y 0.5 de discriminación. ¿Cuál será la probabilidad de que un sujeto con una theta=1 acierte el ítem?;0.50;0.15;0.85
+222;6;TRI;2015;Hemos construido un test de dos ítems según la TRI, sabiendo que para el item 1: P1(theta=-1)=0.5 y P1(theta=+1)=0.4 y que para el item 2: P2(theta=-1)=0.1 y P2(theta=+1)=0.3. ¿Con que sujeto cometeré más error en la estimación, con uno cuya theta=-1 o con uno cuya theta=+1.;Con el primero (theta=-1);Con el segundo (theta=+1);En los dos cometeré la misma cantidad de error
+223;6;TRI;2015;Un test construido con la TRI tiene 3 items, siendo, para theta=0 la probabilidad de acertarlos 0.2, 0.3 y 0.4 respectivamente. ¿Cuál es la probabilidad de que un sujeto con theta=0 acierte los dos primeros y falle el tercero?;0.036;0.024;0.9
+224;6;TRI;2015;Si dentro de la TRI vemos que una curva tiene valores superiores a 1 entonces tenemos claro que es: ;Una CCT ;Una CCI ;Una CCS
+225;6;TRI;2015;Si disminuimos la dificultad de un ítem según la TRI, entonces su  CCI:;Se desplaza a la izquierda ;Se desplaza a la derecha  ;Se vuelve más abrupta 
+226;6;TRI;2015;Sabiendo que un ítem construido según la TRI tiene 0.3 de dificultad, y 0.4 de discriminación y sabiendo que la probabilidad de acertar al azar el ítem es 0.2. ¿Cuál será la probabilidad de que un sujeto con una theta=+1 acierte el ítem?;0.69;0.45;0.86
+227;6;TRI;2015;Hemos construido un test de dos ítems según la TRI, sabiendo que para el item 1: P1(theta=-1)=0.1 y P1(theta=+1)=0.1 y que para el item 2: P2(theta=-1)=0.5 y P2(theta=+1)=0.5. ¿Con que sujeto cometeré más error en la estimación, con uno cuya theta=-1 o con uno cuya theta=+1.;Con el segundo (theta=+1);Con el primero (theta=-1);En los dos cometeré la misma cantidad de error
+228;6;TRI;2015;Un test construido con la TRI tiene 3 ítems, siendo, para theta=0 la probabilidad de acertarlos 0.1, 0.2 y 0.6 respectivamente. ¿Cuál es la probabilidad de que un sujeto con theta=0 acierte el primero y falle el segundo y el tercero?;0.032;0.012;0.890
