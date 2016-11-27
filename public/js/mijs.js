@@ -1,10 +1,12 @@
+// Este fichero controla en comportamiento en jquery de los cuestionarios
+// -------------------------------------------------------------------
+
 function Shuffle(o) {
 	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	return o;
 };
 
-
-
+// -------------------------------------------------------------------
 
 $(document).ready(function(){
 	console.log(data);
@@ -14,9 +16,15 @@ $(document).ready(function(){
 	ctrExp.fill(0);
 //	console.log(ctrExp.length, ctrExp[2])
 
-	// oculta lascd k explicaciones de los alumnos
+	// oculta las k explicaciones de los alumnos
 	$("[id$=_kex_boton]").hide();
+
+	// oculta los iconos de los radios
 	$("[id*=_radio_icono_]").hide();
+
+
+	// oculta los botones izquierdos de las explicaciones
+	$('[id$=_bizq]').hide();
 
 	// Esta parte carga los contenidos
 	$.each(data, function (i, pregunta){
@@ -32,19 +40,43 @@ $(document).ready(function(){
 				$("#p_"+i+"_radio_texto_"+j).text(pregunta.Respuesta[misufle[j]]);
 			});
 
+
 			// explicaciones de los alumnos
-			// se carga la 0 y luego se van cambiando dinamicamente
-			$("#p_"+i+"_kex_texto").text(pregunta.Explicaciones[0].Texto)
-			$("#p_"+i+"_kex_votos").text(pregunta.Explicaciones[0].Votos);
-			$("#p_"+i+"_kex_nombre").text(pregunta.Explicaciones[0].Nombre);
-			$("#p_"+i+"_kex_fecha").text(pregunta.Explicaciones[0].Fecha);
-			$("#p_"+i+"_kex_nid").text("1");
-			$("#p_"+i+"_kex_ntotal").text(pregunta.Explicaciones.length);
-			$("#p_"+i+"_kex_n").text(pregunta.Explicaciones.length);
+			// se ordenan por numero de votos
+
+			// Se comprueba que al menos tenga una explicacion
+			if(pregunta.Explicaciones.length > 0){
+				pregunta.Explicaciones.sort(function(a, b){ // sort object by age field
+					return b.Votos-a.Votos;
+				})
+
+
+				// se carga la 0 y luego se van cambiando dinamicamente
+				$("#p_"+i+"_kex_texto").text(pregunta.Explicaciones[0].Texto)
+				$("#p_"+i+"_kex_votos").text(pregunta.Explicaciones[0].Votos);
+				$("#p_"+i+"_kex_nombre").text(pregunta.Explicaciones[0].Nombre);
+				$("#p_"+i+"_kex_fecha").text(pregunta.Explicaciones[0].Fecha);
+				$("#p_"+i+"_kex_nid").text("1");
+				$("#p_"+i+"_kex_ntotal").text(pregunta.Explicaciones.length);
+				$("#p_"+i+"_kex_n").text(pregunta.Explicaciones.length);
+
+				// oculta el boton derecho si no tiene mas de una explicacion
+				if( pregunta.Explicaciones.length < 2) $("#p_"+i+"_kex_bder").hide();
+			} else {
+				$("#p_"+i+"_kex_texto").text("Lo sentimos, todavía no hay explicaciones")
+				$("#p_"+i+"_kex_votos").text("0");
+				$("#p_"+i+"_kex_nombre").text("undefined");
+				$("#p_"+i+"_kex_fecha").text("undefined");
+				$("#p_"+i+"_kex_nid").text("undefined");
+				$("#p_"+i+"_kex_ntotal").text("undefined");
+				$("#p_"+i+"_kex_n").text("0");
+				$("#p_"+i+"_kex_bder").hide();
+			}
 	});
 
-	// oculta los botones izquierdos de las explicaciones
-	$('[id$=_bizq]').hide();
+
+
+
 
 	// al elegir una opcion el icono de "editado" se hace visible
 	$('input:radio').change(function(){
@@ -60,27 +92,43 @@ $(document).ready(function(){
 	});
 
 
+	// Se corrige el cuestionario
+	$("#corregir").click(function(){
+		// por ahora no se calculan aciertos y fallos
+		// var naciertos = 0;
+		// var nfallos = 0;
 
-	// al corregir el cuestionario
-	$("#miboton").click(function(){
-		var naciertos = 0;
-		var nfallos = 0;
-
+		// desaparecen cosas:
+		//		El icono de write
+		// 		los radios
+		//		se colapsan todas las preguntas
+		//		el boton corregir
 		$('[id$=iconW]').attr("style","color:transparent");
 		$('input:radio').hide();
-		$("[id*=_radio_icono_]").show();
 		$('.panel-collapse.in').collapse('hide');
+		$('#corregir').hide();
+
+		// aparecen cosas:
+		//		Los botones de K explicaciones
+		//		Los iconos de aciertos y fallos
+		//		La pagina se va al top
+		$("[id*=_radio_icono_]").show();
 		$("[id$=_kex_boton]").show();
 		$(window).scrollTop(0);
+
+
+		// se corrige cada pregunta
 		$.each(data, function (i){
 
+			// Rval es el valor marcado, Rid el id del radio marcado y Cid es el id de la respuesta
+			// correcta
 			var Rval = $('input[name=p_' +i+ '_radio]:checked').val();
 			var Rid = $('input[name=p_' +i+ '_radio]:checked').attr('id');
 			var Cid = $('input[name=p_' +i+ '_radio][value=0]').attr('id');
 
 			console.log(Rval, Rid, Cid);
 			if ( !Rval ) {
-				// no hay respuesta
+				// OMISION --------------------------------------------
 				// se marca la respuesta correcta
 				var cad = '#'+Cid.replace('_value','_icono');
 				$(cad).removeAttr("style");	
@@ -93,9 +141,11 @@ $(document).ready(function(){
 
 
 			} else if (Rval!=0) {
-				// es un fallo
-				nfallos++;
-				console.log("es un fallo");
+				
+				// FALLO ---------------------------------
+				
+				//nfallos++;
+				//console.log("es un fallo");
 
 				// se marca la respuesta correcta
 				var cad = '#'+Cid.replace('_value','_icono');
@@ -115,9 +165,10 @@ $(document).ready(function(){
 				// $('#p_'+i+'_head').css("background", "#FF5A51");
 
 			} else {
-				// es un acierto
-				naciertos++;
-				console.log("es un acierto");
+				// ACIERTO --------------------------------------
+				//naciertos++;
+				//console.log("es un acierto");
+
 				// se marca la respuesta correcta con un simbolo
 				var cad = '#'+Rid.replace('_value','_icono');
 				$(cad).removeAttr("style");	
@@ -132,6 +183,7 @@ $(document).ready(function(){
 	});
 
 
+	// Control de las explicaciones ---------------------------------------
 	// botones que controlan las explicaciones
 	$('[id$=_bder]').click(function(){
 		var i = $(this).attr('id');
@@ -192,98 +244,22 @@ $(document).ready(function(){
 			data[i].Explicaciones[ctrExp[i]].Votos++;
 			data[i].Explicaciones[ctrExp[i]].Votos*=-1;
 			$("#p_"+i+"_kex_votos").text(Math.abs(data[i].Explicaciones[ctrExp[i]].Votos));
-			// $("#p_"+i+"_kex_votos").attr("id","desactivado")
+			// aqui mandarlo al servidor
+			var parameters = { pId: data[i].pId, eId: data[i].Explicaciones[ctrExp[i]].eId };
+		 	$.get( '/manda', parameters, function(data, status) {
+		 		console.log(data, status)
+			    // $('#results').html(data);
+			});
 		}
+	});
+
+	$("#enviar").click(function(){
+		var parameters = { pId: 1, eId: 0 };
+	 	$.get( '/manda', parameters, function(data, status) {
+	 		console.log(data, status)
+		    // $('#results').html(data);
+		});
 	});
 
 }); 
 
-
-
-
-//		console.log($('input[name^="p_0"]').is(':checked'));
-//		console.log($('input[name=p_0_radio]:checked').val());
-/*		$.each(data, function (i, pregunta){
-			
-
-
-			console.log("pregunta nueva");
-			$('input[name^="p_0"]').each(function (index) {
-				console.log(index, $(this).is(':checked'));
-			});
-
-		});
-*/
-
-/*		$('input[name^="p_"]').each(function (index) {
-			if($(this).attr('value')==0){
-				naciertos++;
-				console.log("aciert0", $(this).attr('id'));
-			} else {
-				nfallos--;
-				console.log("fall0", $(this).attr('id'));
-			}
-			console.log(index, $(this).attr('name'), $(this).attr('value'),
-				$(this).is(':checked'));
-
-		});	*/
-	
-
-
-
-
-/*	$("#miboton").click(function(){
-    	 $.each(data, function (i, pregunta){
-   			$("#p_"+i+"_enunciado").text(pregunta.enunciado);
-   			var misufle = Shuffle([0, 1, 2]);
-   			console.log(misufle);
-  			$.each(pregunta.respuesta , function (j){
-  				$("#p_"+i+"_radio_value_"+j).val(misufle[j]);
-  				$("#p_"+i+"_radio_texto_"+j).text(pregunta.respuesta[misufle[j]]);
-  			});
-
-    	 });
-  	});*/
-
-	//$("[id$=_iconW]").hide();
-	//$("[id$=_kex_boton]").hide();
-
-	// });
-	//$("#p_0_iconW").hide();
-
-	//$("[id$=_ricono]").hide();
-	//$("#p_0_1_ricono").show();
-	// $("#p_0_1_ricono").attr("style","color:red");
-	
-	// console.log(data.length);
-	// $.each(data , function (index, value){
-	// 	$('#p_' + index + '_iconW').hide();
- 
- //  	});
-
-
-// 	console.log(pr[0].enunciado);
-//  	$('input:radio').click(function() { 
- 		
-//  		var iconName = "p_" + $(this).attr('name').substring(2,$(this).attr('name').length)
-//  						+ "_iconW";
-// //		alert(iconName);
-// 		var foo = '#' + iconName;
-// 		console.log(iconName, foo);
-
-// 		$('#' + iconName).hide();
-
-// 	});
-
-
-
-
-
-
-//   $("button").click(function(){
-//      console.log("hace click");
-//     $("#hitem1").css("background-color", "yellow");       
-//   });
-//  $('input[type=radio][name=optradio]').change(function() {
-//		$("#mi_icono").attr("class", "glyphicon glyphicon-thumbs-down text-success");
-//   });

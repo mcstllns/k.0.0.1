@@ -14,7 +14,7 @@ var Schema = mongoose.Schema;
 
 var preguntaSchema = new Schema({
 	pId    : Number,
-	TemaId : String,
+	TemaId : Number,
 	TemaTitulo: String,
 	Año    : String,
 	Pregunta: String,
@@ -30,5 +30,11 @@ var preguntaSchema = new Schema({
 	}]
 });
   
-mongoose.model('col3', preguntaSchema);
-mongoose.connect('mongodb://localhost/migueldb');
+//mongoose.model('col3', preguntaSchema);
+mongoose.model('preguntas', preguntaSchema);
+mongoose.Promise = global.Promise;
+//conexion local
+//mongoose.connect('mongodb://localhost/migueldb');
+
+// conexion con mongolab
+mongoose.connect('mongodb://kuser:caoybnh4gMKLqRmgzxYj@ds163667.mlab.com:63667/kmongo');

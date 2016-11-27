@@ -92,65 +92,41 @@ router.get('/q', function(req, res, next) {
 
 
 router.get('/m', function(req, res, next) {
+  var mongoose = require('mongoose');
+  require('mongoose-query-random');
 
+  var colP = mongoose.model('preguntas');
 
+  //col3.find({'pId' : { $in: [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10]}}, '', function (err, person) {
+  colP.find({'TemaId' : 6}).random(5, true, function (err, person) {
+    if (err) return handleError(err);
+    console.log("consola1:", person.length);
 
-// todo esto es el paquete que había antes
-/*  var mongoose = require('mongoose');
-  var Schema = mongoose.Schema;
-
-  var preguntaSchema = new Schema({
-    pId    : Number,
-    TemaId : String,
-    TemaTitulo: String,
-    Año    : String,
-    Pregunta: String,
-    Respuesta : [],
-    Explicaciones : [{
-      eId: Number,
-      Apellido : String,
-      Nombre : String,
-      Email : String,
-      Fecha : String,
-      Texto : String,
-      Votos : Number
-
-    }]
-
+    var pr = person;
+    res.render('q3', {pr : pr});
   });
-  
-  var col3 = mongoose.model('col3', preguntaSchema);
-
-  mongoose.connect('mongodb://localhost/migueldb');
-    var db = mongoose.connection;
-// para mongoose
-  db.on('error', console.error.bind(console, 'connection error:'));
-  db.once('open', function() {
-  // we're connected!
-    console.log("hemos conectado");
-    col3.find({'pId' : { $in: [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10]}}, '', function (err, person) {
-      if (err) return handleError(err);
-      console.log("consola1:", person.length);
-
-      var pr = person;
-      res.render('q3', {pr : pr});
-    });
-  });
-*/
-
-var mongoose = require('mongoose');
-var col3 = mongoose.model('col3');
-col3.find({'pId' : { $in: [1, 2 ,3, 4, 5, 6, 7, 8, 9, 10]}}, '', function (err, person) {
-  if (err) return handleError(err);
-  console.log("consola1:", person.length);
-
-  var pr = person;
-  res.render('q3', {pr : pr});
 });
 
 
- // console.log("pruebas con mongo");
- // res.render('sacaconsola', { cadena: 'Pruebas con mongo' });
+
+router.get('/manda', function(req, res){
+  var mongoose = require('mongoose');
+  var colP = mongoose.model('preguntas');
+  // input value from search
+  var val = req.query;
+  //var val = req.body.mienvio;
+  console.log(val);
+  //res.send("A");
+
+  var cad = 'Explicaciones.' + val.eId + '.Votos';
+  var obj = {};
+  obj[cad] = 1;
+  console.log("query:", cad, obj);
+  colP.update({ 'pId': val.pId }, { $inc: obj }, function (err, result) {  
+    if(!err) res.send("Ok");
+  });
+
+
 });
 
 module.exports = router;

@@ -36,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/q', routes);
 app.use('/m', routes);
+app.use('/manda', routes);
 app.use('/users', users);
 
 

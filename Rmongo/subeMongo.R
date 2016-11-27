@@ -3,11 +3,16 @@ library(jsonlite)
 setwd("~/webDev/kversions/k.0.0.1/Rmongo")
 
 # vamos a hacer las pruebas de carga en la coleccion 3 de la base migueldb
-col = "col3"
-db = "migueldb"
+# col = "col3"
+# db = "migueldb"
+
+# configuracion para mongolab
+col = "preguntas"
+db = "kmongo"
+url = "mongodb://kuser:caoybnh4gMKLqRmgzxYj@ds163667.mlab.com:63667/kmongo"
 
 # abrimos una conexion con mongo
-m <- mongo(collection = col, db = db)
+m <- mongo(collection = col, url = url)
 
 # leemos los ficheros que contienen las preguntas y las explicaciones
 p <- read.csv("preguntas.csv", head=TRUE, sep=";", fileEncoding = "Latin1")

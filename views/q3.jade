@@ -16,20 +16,33 @@ append body
 				+acordeonHijo(pregunta, i, "madre")
 
 		p(style="text-align: center;") 
-			button(class="btn btn-primary", id="miboton") Corregir
+			button(class="btn btn-primary", id="corregir") Corregir
+
+		//-p(style="text-align: center;") 
+			button(class="btn btn-primary", id="enviar") Enviar
+
 
 		.modal.fade(id="mimodal", role="dialog")
 			.modal-dialog
 				.modal-content
 					.modal-header
-						button(type="button" class="close" data-dismiss="modal") 
-						.modal-title Mensaje
+						button(type="button" class="close" data-dismiss="modal") &times;
+						.modal-title AVISO:
 					.modal-body 
 						span(id="textomodal")
+					.modal-footer
+						.text-center
+							button(type="button" class="btn btn-default btn-sm" data-dismiss="modal") Cerrar
 
 	.footer
 		.container
-			.text-muted.text-right <em>Miguel Angel Castellanos, 2016</em>
+			table(style="width:100%")
+					tbody
+						tr
+							td
+								.text-muted.text-left <em>K.0.0.1</em>
+							td
+								.text-muted.text-right <em>Miguel Angel Castellanos, 2016</em>
 
 
 
