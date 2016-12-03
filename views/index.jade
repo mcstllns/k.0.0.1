@@ -1,15 +1,33 @@
-extends ../node_modules/jade-bootstrap/_bootstrap
+extends _bootstrap
 
+append scripts
+	script(src='js/selector.js')
+	script(src='js/jquery.redirect.js')
 
 append body
-	.container
-		h1= title + "Mi jade"
-		+icon("search")
-		+a-btn("#") Default Link Button
-		+a-btn-primary("#") Primary Link Button
-		+a-btn-info("#") Info Link Button
-		+a-btn-warning("#") Warning Link Button
-		+a-btn-danger("#") Danger Link Button
-		+a-btn-success("#") Success Link Button
-
+	.container-fluid(style="max-width:600px")
+		.row
+			img(src="/images/klogo.jpg" class="img-responsive img-rounded" style="max-width: 100%; height=auto;")
+		.row
+			.col-xs-3
+				span(style="font-size:100px;", class="text-primary vcenter") 
+					strong K
+			.col-xs-9
+				blockquote(class="blockquote-reverse vcenter") 
+					h5 Aplicación con preguntas tipo test para los alumnos de psicometría de la UCM
+					h5 Contiene cuestionarios aleatorios por temas y explicaciones de cada pregunta ordenadas por votos
+					small mcastellanos, 2016
 		
+		-var columns = 2
+		-for (var i = 0; i < pr.length; i=i+columns)
+			-var obj = []
+			-for (var j = 0; j < columns && i+j < pr.length; j++)
+				-obj.push(pr[i+j])
+			+fila(obj)
+
+
+
+
+
+
+	

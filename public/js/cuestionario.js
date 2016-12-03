@@ -6,15 +6,22 @@ function Shuffle(o) {
 	return o;
 };
 
+function actualizaKex(i, obj, nid, length){
+	$("#p_"+i+"_kex_texto").text(obj.Texto)
+	$("#p_"+i+"_kex_votos").text(Math.abs(obj.Votos));
+	$("#p_"+i+"_kex_nombre").text(obj.Nombre);
+	$("#p_"+i+"_kex_fecha").text(obj.Fecha);
+	$("#p_"+i+"_kex_nid").text(nid);
+	$("#p_"+i+"_kex_ntotal").text(length);
+};
+
 // -------------------------------------------------------------------
 
 $(document).ready(function(){
-	console.log(data);
-	console.log(data.length);
+
 	// un array para controlar en que explicacion estamos
 	var ctrExp = new Array(data.length);
 	ctrExp.fill(0);
-//	console.log(ctrExp.length, ctrExp[2])
 
 	// oculta las k explicaciones de los alumnos
 	$("[id$=_kex_boton]").hide();
@@ -22,11 +29,14 @@ $(document).ready(function(){
 	// oculta los iconos de los radios
 	$("[id*=_radio_icono_]").hide();
 
-
 	// oculta los botones izquierdos de las explicaciones
 	$('[id$=_bizq]').hide();
 
-	// Esta parte carga los contenidos
+	// oculta el boton de volver
+	$('#inicio').hide();
+
+	
+	// 	CREA LOS CONTENIDOS ---------------------------------------------
 	$.each(data, function (i, pregunta){
 
 			// enunciados de las preguntas
@@ -34,50 +44,48 @@ $(document).ready(function(){
 			
 			// alternativas de respuesta aleatorizadas
 			var misufle = Shuffle([0, 1, 2]);
-			console.log(misufle);
+			//console.log(misufle);
 			$.each(pregunta.Respuesta , function (j){
 				$("#p_"+i+"_radio_value_"+j).val(misufle[j]);
 				$("#p_"+i+"_radio_texto_"+j).text(pregunta.Respuesta[misufle[j]]);
 			});
 
 
-			// explicaciones de los alumnos
-			// se ordenan por numero de votos
+			// explicaciones de los alumnos ordenadas por numeros de votos
 
 			// Se comprueba que al menos tenga una explicacion
 			if(pregunta.Explicaciones.length > 0){
-				pregunta.Explicaciones.sort(function(a, b){ // sort object by age field
+				pregunta.Explicaciones.sort(function(a, b){
 					return b.Votos-a.Votos;
 				})
 
-
 				// se carga la 0 y luego se van cambiando dinamicamente
-				$("#p_"+i+"_kex_texto").text(pregunta.Explicaciones[0].Texto)
-				$("#p_"+i+"_kex_votos").text(pregunta.Explicaciones[0].Votos);
-				$("#p_"+i+"_kex_nombre").text(pregunta.Explicaciones[0].Nombre);
-				$("#p_"+i+"_kex_fecha").text(pregunta.Explicaciones[0].Fecha);
-				$("#p_"+i+"_kex_nid").text("1");
-				$("#p_"+i+"_kex_ntotal").text(pregunta.Explicaciones.length);
+				actualizaKex(i, pregunta.Explicaciones[0], 1, pregunta.Explicaciones.length)
 				$("#p_"+i+"_kex_n").text(pregunta.Explicaciones.length);
 
 				// oculta el boton derecho si no tiene mas de una explicacion
 				if( pregunta.Explicaciones.length < 2) $("#p_"+i+"_kex_bder").hide();
+
 			} else {
-				$("#p_"+i+"_kex_texto").text("Lo sentimos, todavía no hay explicaciones")
-				$("#p_"+i+"_kex_votos").text("0");
-				$("#p_"+i+"_kex_nombre").text("undefined");
-				$("#p_"+i+"_kex_fecha").text("undefined");
-				$("#p_"+i+"_kex_nid").text("undefined");
-				$("#p_"+i+"_kex_ntotal").text("undefined");
-				$("#p_"+i+"_kex_n").text("0");
+				// Si no tiene ninguna explicacion creamos un objeto dummy
+				var obj = [];
+				obj["Texto"] = "Lo sentimos, todavía no hay explicaciones :-(";
+				obj["Votos"] = 0;
+				obj["Nombre"] = "---";
+				obj["Fecha"] = "---";
+
+				actualizaKex(i, obj, 0, 0);
+				$("#p_"+i+"_kex_n").text(0);
+
+				// oculta el boton derecho
 				$("#p_"+i+"_kex_bder").hide();
+				// oculta el corazon
+				$("#p_"+i+"_kex_okicon").hide();
+
 			}
 	});
 
-
-
-
-
+	// CONTROL AL RESPONDER  -----------------------------------------------------------
 	// al elegir una opcion el icono de "editado" se hace visible
 	$('input:radio').change(function(){
 		var cad = $(this).attr('name').replace("_radio","_iconW")
@@ -92,6 +100,7 @@ $(document).ready(function(){
 	});
 
 
+	// CORRECCION DEL CUESTIONARIO  ---------------------------------------------------------------
 	// Se corrige el cuestionario
 	$("#corregir").click(function(){
 		// por ahora no se calculan aciertos y fallos
@@ -99,34 +108,32 @@ $(document).ready(function(){
 		// var nfallos = 0;
 
 		// desaparecen cosas:
-		//		El icono de write
-		// 		los radios
-		//		se colapsan todas las preguntas
-		//		el boton corregir
-		$('[id$=iconW]').attr("style","color:transparent");
-		$('input:radio').hide();
-		$('.panel-collapse.in').collapse('hide');
-		$('#corregir').hide();
+		$('[id$=iconW]').attr("style","color:transparent");  	//	El icono de write
+		$('input:radio').hide();								//  Los radios
+		$('.panel-collapse.in').collapse('hide');				//  Se colapsan todas las preguntas
+		$('#corregir').hide();									//  El boton corregir
 
 		// aparecen cosas:
-		//		Los botones de K explicaciones
-		//		Los iconos de aciertos y fallos
-		//		La pagina se va al top
-		$("[id*=_radio_icono_]").show();
-		$("[id$=_kex_boton]").show();
-		$(window).scrollTop(0);
-
-
+		$("[id*=_radio_icono_]").show();						//	Los botones de K explicaciones
+		$("[id$=_kex_boton]").show();							//	Los iconos de aciertos y fallos
+		$(window).scrollTop(0);									//	La pagina se va al top
+		$('#inicio').show();									//	El boton de inicio
+/*		$("#textomodal").text(`En su cuestionario las alternativas
+			de respuesta están aleatorizadas. En las explicaciones la respuesta correcta
+			siempre se refiere como A por lo que no coincidirán. Use el valor dado en la explicación
+			para su interpretación.
+			`);													//  Un modal 
+		$('#mimodal').modal('show');
+*/
 		// se corrige cada pregunta
 		$.each(data, function (i){
 
-			// Rval es el valor marcado, Rid el id del radio marcado y Cid es el id de la respuesta
-			// correcta
+			// Rval es el valor marcado, Rid el id del radio marcado y Cid es el id de la respuesta correcta
 			var Rval = $('input[name=p_' +i+ '_radio]:checked').val();
 			var Rid = $('input[name=p_' +i+ '_radio]:checked').attr('id');
 			var Cid = $('input[name=p_' +i+ '_radio][value=0]').attr('id');
 
-			console.log(Rval, Rid, Cid);
+			//console.log(Rval, Rid, Cid);
 			if ( !Rval ) {
 				// OMISION --------------------------------------------
 				// se marca la respuesta correcta
@@ -138,15 +145,10 @@ $(document).ready(function(){
 				$('#p_'+i+'_panel').removeClass('panel panel-primary');
 				$('#p_'+i+'_panel').addClass('panel panel-default')
 
-
-
 			} else if (Rval!=0) {
 				
 				// FALLO ---------------------------------
-				
 				//nfallos++;
-				//console.log("es un fallo");
-
 				// se marca la respuesta correcta
 				var cad = '#'+Cid.replace('_value','_icono');
 				$(cad).removeAttr("style");	
@@ -161,13 +163,11 @@ $(document).ready(function(){
 
 				// se cambia el color del panel
 				$('#p_'+i+'_panel').removeClass('panel panel-primary');
-				$('#p_'+i+'_panel').addClass('panel panel-danger')
-				// $('#p_'+i+'_head').css("background", "#FF5A51");
+				$('#p_'+i+'_panel').addClass('panel panel-danger');
 
 			} else {
 				// ACIERTO --------------------------------------
 				//naciertos++;
-				//console.log("es un acierto");
 
 				// se marca la respuesta correcta con un simbolo
 				var cad = '#'+Rid.replace('_value','_icono');
@@ -183,7 +183,7 @@ $(document).ready(function(){
 	});
 
 
-	// Control de las explicaciones ---------------------------------------
+	// CONTROL DE LAS EXPLICACIONES ---------------------------------------
 	// botones que controlan las explicaciones
 	$('[id$=_bder]').click(function(){
 		var i = $(this).attr('id');
@@ -199,12 +199,7 @@ $(document).ready(function(){
 		}
 		if (ctrExp[i]<data[i].Explicaciones.length){
 			console.log(ctrExp[i]);
-			$("#p_"+i+"_kex_texto").text(data[i].Explicaciones[ctrExp[i]].Texto)
-			$("#p_"+i+"_kex_votos").text(Math.abs(data[i].Explicaciones[ctrExp[i]].Votos));
-			$("#p_"+i+"_kex_nombre").text(data[i].Explicaciones[ctrExp[i]].Nombre);
-			$("#p_"+i+"_kex_fecha").text(data[i].Explicaciones[ctrExp[i]].Fecha);
-			$("#p_"+i+"_kex_nid").text(ctrExp[i]+1);
-			$("#p_"+i+"_kex_ntotal").text(data[i].Explicaciones.length);
+			actualizaKex(i, data[i].Explicaciones[ctrExp[i]], ctrExp[i]+1, data[i].Explicaciones.length)
 		}	
 	});
 
@@ -222,12 +217,7 @@ $(document).ready(function(){
 		}
 		if (ctrExp[i]>=0){
 			console.log(ctrExp[i]);
-			$("#p_"+i+"_kex_texto").text(data[i].Explicaciones[ctrExp[i]].Texto)
-			$("#p_"+i+"_kex_votos").text(Math.abs(data[i].Explicaciones[ctrExp[i]].Votos));
-			$("#p_"+i+"_kex_nombre").text(data[i].Explicaciones[ctrExp[i]].Nombre);
-			$("#p_"+i+"_kex_fecha").text(data[i].Explicaciones[ctrExp[i]].Fecha);
-			$("#p_"+i+"_kex_nid").text(ctrExp[i]+1);
-			$("#p_"+i+"_kex_ntotal").text(data[i].Explicaciones.length);
+			actualizaKex(i, data[i].Explicaciones[ctrExp[i]], ctrExp[i]+1, data[i].Explicaciones.length)
 		}	
 	});
 
@@ -247,18 +237,10 @@ $(document).ready(function(){
 			// aqui mandarlo al servidor
 			var parameters = { pId: data[i].pId, eId: data[i].Explicaciones[ctrExp[i]].eId };
 		 	$.get( '/manda', parameters, function(data, status) {
-		 		console.log(data, status)
+		 		// console.log(data, status)
 			    // $('#results').html(data);
 			});
 		}
-	});
-
-	$("#enviar").click(function(){
-		var parameters = { pId: 1, eId: 0 };
-	 	$.get( '/manda', parameters, function(data, status) {
-	 		console.log(data, status)
-		    // $('#results').html(data);
-		});
 	});
 
 }); 

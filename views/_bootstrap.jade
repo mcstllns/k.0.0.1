@@ -1,9 +1,8 @@
-//- bootstrap.jade
-//- bootstrap mixins
 
-//- Including Icon mixins
-include bootswatch
-include components
+
+//- Including mixins
+include _components
+
 
 doctype html
 html(lang="en")
@@ -13,24 +12,24 @@ html(lang="en")
 		meta(name="viewport",content="width=device-width, initial-scale=1")
 		meta(name="description",content="")
 		meta(name="author",content="")
-		link(rel="icon",href="/favicon.ico")
-		title= title
+		link(rel="icon",href="/images/favicon.ico")
+		title= ": cuestionarios"
 		+bootswatch("flatly")
+		link(href="/css/equal.row.css", rel="stylesheet")
+
 
 		//- block styles			
 			//- link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")		
 
 	body(data-spy="scroll",data-target=".scrollspy")
 		block body
-			
+		
+		include footer
+
 		block scripts
 			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
 			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
-			script(src='js/mijs.js')
-			//-script(src='js/prueba.js')
-			//-link(href="css/sticky-footer.css" rel="stylesheet")
-			script(type='text/javascript') 
-				| var data =!{JSON.stringify(pr)}
+			
 			//-script(type='text/javascript') 
 				| var data = #{pr[0]}
 

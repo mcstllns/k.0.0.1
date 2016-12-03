@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+//var users = require('./routes/users');
 
 // mongoose config
 require('./mongodb');
@@ -27,30 +27,22 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 
 // -------------------------------------------------------------
 // Aqui van mis direcciones
 
 app.use('/', routes);
-app.use('/q', routes);
 app.use('/m', routes);
 app.use('/manda', routes);
-app.use('/users', users);
-
-
-
+//app.use('/q', routes);
+//app.use('/users', users);
 
 
 
 
 // -------------------------------------------------------------
-
-
-
-
-
 
 
 

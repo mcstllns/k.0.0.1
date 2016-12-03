@@ -1,22 +1,25 @@
-# jadebootstrap-seed
-[JADE-Bootstrap](http://rajasegar.github.io/JADE-Bootstrap/) boilerplate project for [NodeJS](http://nodejs.org/) using [Express](http://expressjs.com) middleware
+# k.0.0.1
 
-## Quick Start
+## Descripción:
+Una pequeña aplicación para los alumnos de psicometría de la UCM. Contiene una base en mongo de preguntas tipo test y de explicaciones que ellos mismos han preparado. Al corregir el test se ofrecen las explicaciones y el alumno puede votar en ellas.
+En el futuro debería irse convirtiendo poco a poco en un campus virtual completo.
 
-  The quickest way to get started with this boilerplate is to install the packages first and use the npm script to start the application as shown below:
+## Dependencias:
+	* express
+	* mongodb
+	* mongoose
+	* jade
+	* bootstrap
+	* jquery
+	* mongolite en R para el control de mongo
 
-  Install the packages.
+## Estado:
+En desarrollo, muy verde por ahora.
 
-```bash
-$ git clone https://github.com/rajasegar/jadebootstrap-seed.git
-$ cd jadebootstrap-seed
-$ npm install
-$ npm start
-```
-## Features
+## Autor:
+Miguel A. Castellanos [mcastellanos@psi.ucm.es]
 
-  * Bootstrap set as the default UI framework
-  * JADE set as the default Template engine
-  * Focus on high performance
-  * Super-speed development using JADE mixins
+## Fecha:
+Noviembre de 2016
+
   

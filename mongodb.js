@@ -1,13 +1,7 @@
-// var mongoose = require('mongoose');
-// var Schema   = mongoose.Schema;
+// preparacion de la base mongo, en local o en mlab
 
-// var Comment = new Schema({
-//     title : String,
-// });
-
-// mongoose.model('comments', Comment);
-
-// mongoose.connect('mongodb://localhost/node-comment');
+// fichero de configuracion y contraseñas
+var config = require('./../config/k.config')
 
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
@@ -30,11 +24,24 @@ var preguntaSchema = new Schema({
 	}]
 });
   
-//mongoose.model('col3', preguntaSchema);
+var tareaSchema = new Schema({
+	tId : Number,
+	titulo : String,
+	subtitulo : String,
+	quote : String,
+	nq : Number,
+	aleatorio : Number,
+	visible : Number,
+	enabled : Number,
+	query : String
+});	
+
 mongoose.model('preguntas', preguntaSchema);
+mongoose.model('tareas', tareaSchema);
 mongoose.Promise = global.Promise;
+
 //conexion local
-//mongoose.connect('mongodb://localhost/migueldb');
+mongoose.connect('mongodb://localhost/kmongo');
 
 // conexion con mongolab
-mongoose.connect('mongodb://kuser:caoybnh4gMKLqRmgzxYj@ds163667.mlab.com:63667/kmongo');
+//mongoose.connect(config.mLabUrl);
